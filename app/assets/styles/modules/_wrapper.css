@@ -1,22 +1,16 @@
 .wrapper {
   overflow: hidden;
+  padding-left: 18px;
+  padding-right: 18px;
   max-width: 1236px;
   margin-left: auto;
   margin-right: auto;
 
-  &__medium {
+  &--medium {
     max-width: 976px;
   }
 
-  &__b-margin {
-    margin-bottom: 1rem;
-
-    @mixin atSmall {
-      margin-bottom: 3.875rem;
-    }
-  }
-
-  &__no-padding-until-medium {
+  &--no-padding-until-medium {
     padding-left: 0;
     padding-right: 0;
 
@@ -26,7 +20,7 @@
     }
   }
 
-  &__no-padding-until-large {
+  &--no-padding-until-large {
     padding-left: 0;
     padding-right: 0;
 
@@ -40,4 +34,13 @@
     padding-left: 0;
     padding-right: 0;
   }
+
+  &--b-margin {
+    margin-bottom: 1rem;
+
+    @mixin atSmall {
+      margin-bottom: 3.875rem;
+    }
+  }
+
 }
